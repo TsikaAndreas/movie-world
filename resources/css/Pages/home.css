@@ -1,0 +1,26 @@
+.home-container {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.main-content {
+    order: 1;
+}
+
+.aside-content {
+    order: 2;
+    padding: 0 1rem;
+}
+
+@media (max-width: 768px) {
+    .home-container {
+        grid-template-columns: 1fr;
+    }
+    .aside-content {
+        order: -1;
+        padding: 0;
+        margin-bottom: 1rem;
+    }
+}

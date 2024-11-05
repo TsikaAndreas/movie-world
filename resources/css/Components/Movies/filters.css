@@ -1,0 +1,50 @@
+.filters {
+    padding: 1rem 2rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 200px;
+}
+
+.filters h5 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    color: #333;
+}
+
+.filters .form-check {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 0;
+    cursor: pointer;
+}
+
+.filters .form-check-input {
+    margin-right: 5px;
+    accent-color: #007bff;
+    cursor: pointer;
+}
+
+.filters .form-check-input {
+    margin-left: 0;
+}
+
+.filters .form-check-label {
+    color: #555;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.filters .form-check:hover .form-check-label {
+    color: #007bff;
+}
+@media (max-width: 768px) {
+    .filters {
+        max-width: 100%;
+    }
+    .filter-options {
+        display: flex;
+        gap: 15px;
+    }
+}

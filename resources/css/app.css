@@ -1,0 +1,67 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+.guest-bg .app-logo {
+    display: inline-block;
+    width: 400px;
+    max-height: 50px;
+}
+
+.guest-bg {
+    height: 100%;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../assets/images/movie.jpg");
+    background-size: cover;
+    color: white;
+}
+
+.guest-content, .primary-content {
+    justify-self: center;
+}
+
+.primary-bg .app-logo {
+    display: inline-block;
+    width: 200px;
+    max-height: 50px;
+}
+.primary-bg header {
+    background: #fff;
+    color: #333;
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.page-wrapper {
+    height: 100vh;
+}
+
+#nprogress div.spinner {
+    top: 70px;
+}
+
+#nprogress .spinner .spinner-icon {
+    width: 30px;
+    height: 30px;
+}
+
+@media (max-width: 768px) {
+
+    .primary-bg header {
+        flex-direction: column;
+        text-align: center;
+    }
+    .primary-bg header a {
+        margin-bottom: 5px;
+    }
+
+}
+
+@media (max-width: 425px) {
+    .primary-bg header nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .primary-bg header nav .auth-logout {
+        margin-top: 5px;
+        width: fit-content;
+    }
+}

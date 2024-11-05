@@ -1,0 +1,72 @@
+.movie-card {
+    gap: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 650px;
+}
+
+.movie-card-header {
+    align-items: center;
+}
+
+.movie-card-header a {
+    text-decoration: none;
+    color: inherit;
+}
+.movie-card-header a:hover {
+    color: #bb2d3b;
+}
+
+.movie-card-title {
+    justify-self: start;
+}
+
+.movie-card-date {
+    justify-self: end;
+}
+
+.movie-card-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.movie-card-footer {
+    align-items: center;
+}
+
+.movie-card-stats {
+    justify-self: start;
+}
+
+.movie-card-actions {
+    display: flex;
+    justify-self: center;
+    gap: 10px;
+    justify-content: center;
+}
+
+.movie-card-actions button {
+    display: inherit;
+    align-items: center;
+}
+
+.movie-card-actions button .like {
+    transform: rotateY(180deg);
+}
+
+.movie-card-posted-by {
+    justify-self: end;
+}
+
+.movie-card-posted-by a {
+    text-decoration: none;
+    color: inherit;
+}
+.movie-card-posted-by a:hover {
+    color: #bb2d3b;
+}
+
+@media (max-width: 576px) {
+    .movie-card-footer {
+        gap: 10px;
+    }
+}
